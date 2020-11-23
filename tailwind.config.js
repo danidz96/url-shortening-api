@@ -8,13 +8,20 @@ module.exports = {
       fontFamily: { sans: ['Poppins'] },
       colors: {
         cyan: 'hsl(180, 66%, 49%)',
-        darkViolet: 'hsl(257, 27%, 26%)',
+        violet: {
+          light: 'hsl(257, 7%, 63%)',
+          DEFAULT: 'hsl(257, 27%, 26%)',
+          dark: 'hsl(260, 8%, 14%)',
+        },
         red: 'hsl(0, 87%, 67%)',
         gray: 'hsl(0, 0%, 75%)',
-        grayishViolet: 'hsl(257, 7%, 63%)',
-        darkBlue: 'hsl(255, 11%, 22%)',
-        darkViolet: 'hsl(260, 8%, 14%)',
+        blue: {
+          dark: 'hsl(255, 11%, 22%)',
+        },
       },
+    },
+    borders: {
+      'border-1': { 'border-width': '1px' },
     },
   },
   variants: {
