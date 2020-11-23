@@ -21,7 +21,9 @@ function Header() {
         </div>
         <div
           className={`${
-            showMobileNav ? 'flex' : 'hidden'
+            showMobileNav
+              ? 'animate-scale-up-tr lg:flex'
+              : 'animate-scale-downs-tr lg:animate-scale-up-tr'
           } justify-center flex-col bg-violet p-8 rounded-xl mt-8 lg:space-x-8 lg:flex-row lg:justify-between lg:w-full lg:p-2 lg:bg-transparent lg:mt-0 lg:flex`}
         >
           <div className="flex justify-center flex-col space-y-6 lg:space-x-8 lg:space-y-0 lg:flex-row lg:items-center">
