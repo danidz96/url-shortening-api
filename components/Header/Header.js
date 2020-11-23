@@ -3,37 +3,54 @@ import React from 'react';
 function Header() {
   return (
     <header className="max-w-7xl mx-auto w-4/5">
-      <nav className="flex items-center my-10 text-grayishViolet font-bold">
-        <img src="/images/logo.svg" alt="Shortly logo" className="mr-10" />
-        <img src="/images/bars.svg" alt="Bars" className="ml-auto lg:hidden" />
-        <div className="justify-start space-x-8 hidden lg:flex">
-          <button type="button" className="hover:text-darkViolet font-bold focus:text-yellow-100">
-            <a href="#">
-              <span>Workflow</span>
-            </a>
-          </button>
-          <button type="button" className="hover:text-darkViolet font-bold">
-            <a href="#">
-              <span>Pricing</span>
-            </a>
-          </button>
-          <button type="button" className="hover:text-darkViolet font-bold">
-            <a href="#">
-              <span>Resources</span>
-            </a>
-          </button>
+      <nav id="main-nav" className="lg:flex items-center my-10 text-violet-light font-bold">
+        <div className="flex justify-between">
+          <img src="/images/logo.svg" alt="Shortly logo" className="mr-10" />
+          <img src="/images/bars.svg" alt="Bars" className="ml-auto lg:hidden" />
         </div>
-        <div className="ml-auto space-x-10 hidden lg:flex">
-          <button type="button" className="hover:text-darkViolet font-bold">
-            <a href="#">
-              <span>Login</span>
-            </a>
-          </button>
-          <button className="rounded-full bg-cyan py-2 px-5 text-white hover:bg-opacity-50 font-bold">
-            <a href="#">
-              <span>Sign Up</span>
-            </a>
-          </button>
+        <div className="flex justify-center flex-col bg-violet p-8 rounded-xl mt-8 lg:space-x-8 lg:flex-row lg:justify-between lg:w-full lg:p-2 lg:bg-transparent lg:mt-0">
+          <div className="flex justify-center flex-col space-y-6 lg:space-x-8 lg:flex-row lg:items-center">
+            <button
+              type="button"
+              className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
+            >
+              <a href="#">
+                <span>Features</span>
+              </a>
+            </button>
+            <button
+              type="button"
+              className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
+            >
+              <a href="#">
+                <span>Pricing</span>
+              </a>
+            </button>
+            <button
+              type="button"
+              className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
+            >
+              <a href="#">
+                <span>Resources</span>
+              </a>
+            </button>
+          </div>
+          <div className="mt-6 mb-6 border-solid text-violet-light border-b lg:hidden"></div>
+          <div className="flex justify-center flex-col space-y-6 lg:ml-auto lg:space-x-10 lg:flex lg:flex-row">
+            <button
+              type="button"
+              className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
+            >
+              <a href="#">
+                <span>Login</span>
+              </a>
+            </button>
+            <button className="rounded-full bg-cyan py-2 px-5 text-white hover:bg-opacity-50 font-bold">
+              <a href="#">
+                <span>Sign Up</span>
+              </a>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
