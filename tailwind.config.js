@@ -22,17 +22,17 @@ module.exports = {
     },
     keyframes: {
       'scale-up-tr': {
-        '0%': { transform: 'scale(0)', 'transform-origin': '100% 0%', display: 'hidden' },
-        '100%': { transform: 'scale(1)', 'transform-origin': '100% 0%', display: 'flex' },
+        '0%': { transform: 'scale(0)', 'transform-origin': '100% 0%' },
+        '100%': { transform: 'scale(1)', 'transform-origin': '100% 0%' },
       },
       'scale-down-tr': {
-        '0%': { transform: 'scale(1)', 'transform-origin': '100% 0%', display: 'flex' },
-        '100%': { transform: 'scale(0)', ' transform-origin': '100% 0%', display: 'hidden' },
+        '0%': { transform: 'scale(1)', 'transform-origin': '100% 0%' },
+        '100%': { transform: 'scale(0)', ' transform-origin': '100% 0%' },
       },
     },
     animation: {
-      'scale-up-tr': 'scale-up-tr 0.4s ease both',
-      'scale-downs-tr': 'scale-down-tr 0.4s ease both',
+      'scale-up-tr': 'scale-up-tr 0.4s forwards ',
+      'scale-downs-tr': 'scale-down-tr 0.4s forwards ',
     },
     borders: {
       'border-1': { 'border-width': '1px' },
