@@ -1,11 +1,26 @@
 import React from 'react';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 function Header() {
-  const [showMobileNav, setShowMobileNav] = React.useState(false);
+  const [showMobileNav, setShowMobileNav] = React.useState(undefined);
+  const { width } = useWindowSize();
 
   const toggleMobileNav = () => {
     setShowMobileNav((value) => !value);
   };
+
+  React.useEffect(() => {
+    if (showMobileNav !== undefined && width > '1024') {
+      setShowMobileNav(undefined);
+    }
+  }, [width]);
+
+  const mobileNavMenuAnimation =
+    showMobileNav === undefined
+      ? null
+      : showMobileNav
+      ? 'animate-scale-up-tr'
+      : 'animate-scale-downs-tr lg:animate-scale-up-tr';
 
   return (
     <header className="max-w-7xl mx-auto w-4/5">
@@ -20,11 +35,7 @@ function Header() {
           />
         </div>
         <div
-          className={`${
-            showMobileNav
-              ? 'animate-scale-up-tr lg:flex'
-              : 'animate-scale-downs-tr lg:animate-scale-up-tr'
-          } justify-center flex-col bg-violet p-8 rounded-xl mt-8 lg:space-x-8 lg:flex-row lg:justify-between lg:w-full lg:p-2 lg:bg-transparent lg:mt-0 lg:flex`}
+          className={`transform scale-0 lg:transform lg:scale-1 ${mobileNavMenuAnimation} justify-center flex-col bg-violet p-8 rounded-xl mt-8 lg:space-x-8 lg:flex-row lg:justify-between lg:w-full lg:p-2 lg:bg-transparent lg:mt-0 lg:flex`}
         >
           <div className="flex justify-center flex-col space-y-6 lg:space-x-8 lg:space-y-0 lg:flex-row lg:items-center">
             <button
