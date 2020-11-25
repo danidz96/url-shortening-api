@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Button from '../Button/Button';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
 function Nav() {
@@ -36,7 +37,7 @@ function Nav() {
           />
         </div>
         <div
-          className={`transform scale-0 lg:transform lg:scale-1 ${mobileNavMenuAnimation} justify-center flex-col bg-violet p-8 rounded-xl mt-8 lg:space-x-8 lg:flex-row lg:justify-between lg:w-full lg:p-2 lg:bg-transparent lg:mt-0 lg:flex`}
+          className={`transform scale-0 lg:transform lg:scale-1 ${mobileNavMenuAnimation} absolute w-4/5 justify-center flex-col bg-violet p-8 rounded-xl mt-8 lg:relative lg:space-x-8 lg:flex-row lg:justify-between lg:w-full lg:p-2 lg:bg-transparent lg:mt-0 lg:flex`}
         >
           <div className="flex justify-center flex-col space-y-6 lg:space-x-8 lg:space-y-0 lg:flex-row lg:items-center lg:ml-6">
             <button
@@ -47,14 +48,11 @@ function Nav() {
                 <span>Features</span>
               </a>
             </button>
-            <button
-              type="button"
-              className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
-            >
+            <Button>
               <a href="#">
                 <span>Pricing</span>
               </a>
-            </button>
+            </Button>
             <button
               type="button"
               className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
