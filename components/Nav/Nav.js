@@ -48,11 +48,14 @@ function Nav() {
                 <span>Features</span>
               </a>
             </button>
-            <Button>
+            <button
+              type="button"
+              className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
+            >
               <a href="#">
                 <span>Pricing</span>
               </a>
-            </Button>
+            </button>
             <button
               type="button"
               className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
@@ -72,11 +75,11 @@ function Nav() {
                 <span>Login</span>
               </a>
             </button>
-            <button className="rounded-full bg-cyan py-2 px-5 text-white hover:bg-opacity-50 font-bold">
+            <Button>
               <a href="#">
                 <span>Sign Up</span>
               </a>
-            </button>
+            </Button>
           </div>
         </div>
       </nav>
