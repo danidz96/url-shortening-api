@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
-function Header() {
+function Nav() {
   const [showMobileNav, setShowMobileNav] = React.useState(undefined);
   const { width } = useWindowSize();
 
@@ -86,4 +86,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Nav;
