@@ -38,7 +38,7 @@ function Header() {
         <div
           className={`transform scale-0 lg:transform lg:scale-1 ${mobileNavMenuAnimation} justify-center flex-col bg-violet p-8 rounded-xl mt-8 lg:space-x-8 lg:flex-row lg:justify-between lg:w-full lg:p-2 lg:bg-transparent lg:mt-0 lg:flex`}
         >
-          <div className="flex justify-center flex-col space-y-6 lg:space-x-8 lg:space-y-0 lg:flex-row lg:items-center lg:ml-3">
+          <div className="flex justify-center flex-col space-y-6 lg:space-x-8 lg:space-y-0 lg:flex-row lg:items-center lg:ml-6">
             <button
               type="button"
               className="text-white font-bold lg:hover:text-violet-dark lg:text-violet-light"
