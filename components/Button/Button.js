@@ -4,7 +4,7 @@ function Button(props) {
   return (
     <button
       type="button"
-      className={`text-white font-bold lg:hover:text-violet-dark lg:text-violet-light ${props.className}`}
+      className={`rounded-full bg-cyan py-2 px-5 text-white hover:bg-opacity-50 font-bold ${props.className}`}
     >
       {props.children}
     </button>
