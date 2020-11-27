@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Button from '../Button/Button';
-import { useWindowSize } from '../../hooks/useWindowSize';
+import Button from 'components/Button/Button';
+import { useWindowSize } from 'hooks/useWindowSize';
 
 function Nav() {
   const [showMobileNav, setShowMobileNav] = React.useState(undefined);
@@ -75,7 +75,7 @@ function Nav() {
                 <span>Login</span>
               </a>
             </button>
-            <Button>
+            <Button className="rounded-full">
               <a href="#">
                 <span>Sign Up</span>
               </a>
