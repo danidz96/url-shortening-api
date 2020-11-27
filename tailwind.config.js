@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         'shorten-mobile': "url('/images/bg-shorten-mobile.svg')",
+        'shorten-desktop': "url('/images/bg-shorten-desktop.svg')",
       }),
     },
     keyframes: {
