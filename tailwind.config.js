@@ -19,6 +19,9 @@ module.exports = {
           dark: 'hsl(255, 11%, 22%)',
         },
       },
+      backgroundImage: (theme) => ({
+        'shorten-mobile': "url('/images/bg-shorten-mobile.svg')",
+      }),
     },
     keyframes: {
       'scale-up-tr': {
