@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       fontFamily: { sans: ['Poppins'] },
       colors: {
-        cyan: 'hsl(180, 66%, 49%)',
+        cyan: {
+          light: 'hsl(180, 66%, 80%)',
+          DEFAULT: 'hsl(180, 66%, 49%)',
+        },
         violet: {
           light: 'hsl(257, 7%, 63%)',
           DEFAULT: 'hsl(257, 27%, 26%)',
