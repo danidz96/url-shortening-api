@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <Nav />
       <Header />
-      <div className="">
+      <div>
         <Shortener />
       </div>
     </div>
