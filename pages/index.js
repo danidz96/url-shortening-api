@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Nav from 'components/Nav/Nav';
 import Header from 'components/Header/Header';
+import Shortener from 'components/Shortener/Shortener';
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       </Head>
       <Nav />
       <Header />
+      <div className="">
+        <Shortener />
+      </div>
     </div>
   );
 }
