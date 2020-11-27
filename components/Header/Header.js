@@ -20,7 +20,7 @@ function Header() {
             performing.
           </span>
           <div className="mt-6 place-self-center lg:place-self-start">
-            <Button className="text-lg px-8 py-3">Get Started</Button>
+            <Button className="text-lg px-8 py-3 rounded-full">Get Started</Button>
           </div>
         </div>
       </div>

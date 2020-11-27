@@ -75,7 +75,7 @@ function Nav() {
                 <span>Login</span>
               </a>
             </button>
-            <Button>
+            <Button className="rounded-full">
               <a href="#">
                 <span>Sign Up</span>
               </a>
