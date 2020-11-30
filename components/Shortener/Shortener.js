@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useForm, reset } from 'react-hook-form';
 import Button from 'components/Button/Button';
-import { shorten } from 'utils/shorten';
+import { shorten } from '../../utils/Shorten';
 import ShortenedUrlList from 'components/ShortenedUrlList/ShortenedUrlList';
 
 function Shortener() {
