@@ -2,6 +2,10 @@ import Head from 'next/head';
 import Nav from 'components/Nav/Nav';
 import Header from 'components/Header/Header';
 import Shortener from 'components/Shortener/Shortener';
+import resolveConfig from 'tailwindcss/resolveConfig';
+import tailwindConfig from '../tailwind.config';
+
+const { theme } = resolveConfig(tailwindConfig);
 
 export default function Home() {
   return (
@@ -16,7 +20,11 @@ export default function Home() {
       </Head>
       <Nav />
       <Header />
-      <div>
+      <div
+        style={{
+          background: `linear-gradient(180deg, white 5.5rem, ${theme.colors.gray.light} 5.5rem, ${theme.colors.gray.light} 100%)`,
+        }}
+      >
         <Shortener />
       </div>
     </div>
