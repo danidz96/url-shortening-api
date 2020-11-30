@@ -17,12 +17,15 @@ module.exports = {
           dark: 'hsl(260, 8%, 14%)',
         },
         red: 'hsl(0, 87%, 67%)',
-        gray: 'hsl(0, 0%, 75%)',
+        gray: {
+          light: 'hsl(225, 33%, 95%)',
+          DEFAULT: 'hsl(0, 0%, 75%)',
+        },
         blue: {
           dark: 'hsl(255, 11%, 22%)',
         },
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: () => ({
         'shorten-mobile': "url('/images/bg-shorten-mobile.svg')",
         'shorten-desktop': "url('/images/bg-shorten-desktop.svg')",
       }),
