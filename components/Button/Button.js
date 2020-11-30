@@ -5,7 +5,7 @@ function Button(props) {
     <button
       type="button"
       {...props}
-      className={`${props.className} bg-cyan py-2 px-5 text-white hover:bg-cyan-light font-bold`}
+      className={`py-2 px-5 text-white font-bold ${props.className}`}
     ></button>
   );
 }

@@ -75,7 +75,7 @@ function Nav() {
                 <span>Login</span>
               </a>
             </button>
-            <Button className="rounded-full">
+            <Button className="rounded-full bg-cyan hover:bg-cyan-light">
               <a href="#">
                 <span>Sign Up</span>
               </a>
