@@ -15,7 +15,7 @@ function Shortener() {
     setLoading(false);
     const updatedUrlList = [
       ...shortenedUrlList,
-      { code: response.code, url, shortenedUrl: response.short_link, status: '' },
+      { code: response.code, url, shortenedUrl: response.short_link },
     ];
     setShortenedUrlList(updatedUrlList);
     setValue('url', '');
@@ -50,7 +50,10 @@ function Shortener() {
               {errors.url.message}
             </span>
           )}
-          <Button type="submit" className="rounded-md py-4 px-12 mt-0 lg:ml-5 lg:w-52">
+          <Button
+            type="submit"
+            className="bg-cyan hover:bg-cyan-light rounded-md py-4 px-12 mt-0 lg:ml-5 lg:w-52"
+          >
             {loading ? 'Loading...' : 'Shorten It!'}
           </Button>
         </div>

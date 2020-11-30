@@ -8,7 +8,6 @@ function ShortenedUrlList({ shortenedUrlList }) {
           key={shortenedUrlItem.code}
           url={shortenedUrlItem.url}
           shortenedUrl={shortenedUrlItem.shortenedUrl}
-          status={null}
         />
       ))}
     </div>
