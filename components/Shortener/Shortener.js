@@ -15,7 +15,7 @@ function Shortener() {
     setLoading(false);
     const updatedUrlList = [
       ...shortenedUrlList,
-      { code: response.code, url, shortenedUrl: response.short_link },
+      { code: response.code, url, shortenedUrl: response.full_short_link },
     ];
     setShortenedUrlList(updatedUrlList);
     setValue('url', '');
