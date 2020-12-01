@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Nav from 'components/Nav/Nav';
 import Header from 'components/Header/Header';
 import Shortener from 'components/Shortener/Shortener';
+import FeaturesSection from 'components/FeaturesSection/FeaturesSection';
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../tailwind.config';
 
@@ -27,6 +28,7 @@ export default function Home() {
       >
         <Shortener />
       </div>
+      <FeaturesSection />
     </div>
   );
 }
