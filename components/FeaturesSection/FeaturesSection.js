@@ -1,6 +1,8 @@
+import FeatureCard from 'components/FeatureCard/FeatureCard';
+
 function FeaturesSection() {
   return (
-    <section className="mt-20 max-w-7xl mx-auto w-4/5">
+    <section className="mt-16 max-w-7xl mx-auto w-4/5">
       <h2
         className="text-3xl font-bold text-center text-violet-dark"
         style={{ lineHeight: '5rem' }}
@@ -12,6 +14,23 @@ function FeaturesSection() {
           Track how your links are performing across the web with our advanced statistics dashboard.
         </p>
       </span>
+      <div className="mt-24 space-y-28">
+        <FeatureCard
+          icon="/images/icon-brand-recognition.svg"
+          title="Brand Recognition"
+          text="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
+        />
+        <FeatureCard
+          icon="/images/icon-detailed-records.svg"
+          title="Detailed Records"
+          text="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
+        />
+        <FeatureCard
+          icon="/images/icon-fully-customizable.svg"
+          title="Fully Customizable"
+          text="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
+        />
+      </div>
     </section>
   );
 }
