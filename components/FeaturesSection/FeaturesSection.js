@@ -14,15 +14,16 @@ function FeaturesSection() {
           Track how your links are performing across the web with our advanced statistics dashboard.
         </p>
       </span>
-      <div className="mt-24 lg:flex lg:space-x-10">
-        <div>
+      <div className="mt-24 lg:flex relative">
+        <div className="w-full h-2 bg-cyan absolute top-1/3"></div>
+        <div className="lg:mr-10">
           <FeatureCard
             icon="/images/icon-brand-recognition.svg"
             title="Brand Recognition"
             text="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
           />
         </div>
-        <div className="mt-24 lg:mt-12">
+        <div className="mt-24 lg:mt-12 lg:mr-10">
           <FeatureCard
             icon="/images/icon-detailed-records.svg"
             title="Detailed Records"
