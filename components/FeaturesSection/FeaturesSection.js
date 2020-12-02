@@ -15,7 +15,7 @@ function FeaturesSection() {
         </p>
       </span>
       <div className="mt-24 lg:flex relative">
-        <div className="w-full h-2 bg-cyan absolute top-1/3"></div>
+        <div className="bg-cyan absolute w-2 h-full left-1/2 lg:w-full lg:h-2 lg:top-1/3"></div>
         <div className="lg:mr-10">
           <FeatureCard
             icon="/images/icon-brand-recognition.svg"
