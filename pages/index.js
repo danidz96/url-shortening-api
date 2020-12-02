@@ -27,8 +27,8 @@ export default function Home() {
         }}
       >
         <Shortener />
+        <FeaturesSection />
       </div>
-      <FeaturesSection />
     </div>
   );
 }
