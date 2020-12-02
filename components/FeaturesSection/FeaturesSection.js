@@ -7,8 +7,10 @@ function FeaturesSection() {
       >
         Advanced Statistics
       </h2>
-      <span className="text-lg mt-3 text-violet-light text-center">
-        Track how your links are performing across the web with our advanced statistics dashboard.
+      <span className="text-lg mt-3 text-center text-violet-light">
+        <p>
+          Track how your links are performing across the web with our advanced statistics dashboard.
+        </p>
       </span>
     </section>
   );
