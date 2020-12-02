@@ -9,27 +9,33 @@ function FeaturesSection() {
       >
         Advanced Statistics
       </h2>
-      <span className="text-lg mt-3 text-center text-violet-light">
-        <p>
+      <span className="text-lg max-w-0 mt-3 text-center text-violet-light">
+        <p className="max-w-lg mx-auto">
           Track how your links are performing across the web with our advanced statistics dashboard.
         </p>
       </span>
-      <div className="mt-24 space-y-28">
-        <FeatureCard
-          icon="/images/icon-brand-recognition.svg"
-          title="Brand Recognition"
-          text="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
-        />
-        <FeatureCard
-          icon="/images/icon-detailed-records.svg"
-          title="Detailed Records"
-          text="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
-        />
-        <FeatureCard
-          icon="/images/icon-fully-customizable.svg"
-          title="Fully Customizable"
-          text="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
-        />
+      <div className="mt-24 lg:flex lg:space-x-10">
+        <div>
+          <FeatureCard
+            icon="/images/icon-brand-recognition.svg"
+            title="Brand Recognition"
+            text="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
+          />
+        </div>
+        <div className="mt-24 lg:mt-12">
+          <FeatureCard
+            icon="/images/icon-detailed-records.svg"
+            title="Detailed Records"
+            text="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
+          />
+        </div>
+        <div className="mt-24 lg:mt-24">
+          <FeatureCard
+            icon="/images/icon-fully-customizable.svg"
+            title="Fully Customizable"
+            text="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
+          />
+        </div>
       </div>
     </section>
   );

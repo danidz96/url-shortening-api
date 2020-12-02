@@ -25,6 +25,7 @@ export default function Home() {
         style={{
           background: `linear-gradient(180deg, white 5.5rem, ${theme.colors.gray.light} 5.5rem, ${theme.colors.gray.light} 100%)`,
         }}
+        className="pb-36"
       >
         <Shortener />
         <FeaturesSection />
