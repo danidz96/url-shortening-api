@@ -4,6 +4,7 @@ import Header from 'components/Header/Header';
 import Shortener from 'components/Shortener/Shortener';
 import FeaturesSection from 'components/FeaturesSection/FeaturesSection';
 import BottomCTA from 'components/BottomCTA/BottomCTA';
+import Footer from 'components/Footer/Footer';
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../tailwind.config';
 
@@ -30,6 +31,7 @@ export default function Home() {
         <Shortener />
         <FeaturesSection />
         <BottomCTA />
+        <Footer />
       </div>
     </div>
   );
