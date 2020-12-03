@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 import Button from 'components/Button/Button';
+import Logo from 'components/Logo/Logo';
 import { useWindowSize } from 'hooks/useWindowSize';
 
 function Nav() {
@@ -28,7 +28,7 @@ function Nav() {
     <header className="max-w-7xl mx-auto w-4/5">
       <nav id="main-nav" className="lg:flex items-center my-10 text-violet-light font-bold">
         <div className="flex justify-between">
-          <Image width="121" height="33" src="/images/logo.svg" alt="Shortly logo" />
+          <Logo />
           <img
             src="/images/bars.svg"
             alt="Bars"
