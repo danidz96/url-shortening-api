@@ -6,6 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: { sans: ['Poppins'] },
+      flexGrow: {
+        DEFAULT: 1,
+        2: 1,
+      },
       colors: {
         cyan: {
           light: 'hsl(180, 66%, 80%)',
@@ -28,6 +32,8 @@ module.exports = {
       backgroundImage: () => ({
         'shorten-mobile': "url('/images/bg-shorten-mobile.svg')",
         'shorten-desktop': "url('/images/bg-shorten-desktop.svg')",
+        'boost-mobile': "url('/images/bg-boost-mobile.svg')",
+        'boost-desktop': "url('/images/bg-boost-desktop.svg')",
       }),
     },
     keyframes: {
