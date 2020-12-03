@@ -28,6 +28,8 @@ module.exports = {
       backgroundImage: () => ({
         'shorten-mobile': "url('/images/bg-shorten-mobile.svg')",
         'shorten-desktop': "url('/images/bg-shorten-desktop.svg')",
+        'boost-mobile': "url('/images/bg-boost-mobile.svg')",
+        'boost-desktop': "url('/images/bg-boost-desktop.svg')",
       }),
     },
     keyframes: {
