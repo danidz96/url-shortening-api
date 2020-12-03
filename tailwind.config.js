@@ -6,6 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: { sans: ['Poppins'] },
+      flexGrow: {
+        DEFAULT: 1,
+        2: 1,
+      },
       colors: {
         cyan: {
           light: 'hsl(180, 66%, 80%)',
