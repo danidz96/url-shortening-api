@@ -2,6 +2,10 @@
 
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
+I have used this little project to practice with Next.js and first use with Tailwind CSS.
+
+Link to the final result deployed on Vercel [Url Shortening](https://url-shortening-api-three.vercel.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
